@@ -143,4 +143,54 @@ PS C:\Users\Malaika\basic-git> git  reset --hard head
 HEAD is now at 6ee5ef5 home and about page are done
 PS C:\Users\Malaika\basic-git> 
 
+
+
+```
+## BANDLE 2
+```bash 
+##exercise1
+
+PS C:\Users\Malaika\basic-git> git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+PS C:\Users\Malaika\basic-git> git add .                        
+PS C:\Users\Malaika\basic-git> git commit -m "service page is done"
+[ft/bundle-2 02cfc51] service page is done
+ 1 file changed, 12 insertions(+)
+ create mode 100644 services.html
+PS C:\Users\Malaika\basic-git> git push origin ft/bundle-2
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 481 bytes | 43.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.iting:
+remote:      https://github.com/GODisALL-FriendOfJesus/basic-git
+remote: 
+To https://github.com/GODisALL-FriendOfJesus/basic-git.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+PS C:\Users\Malaika\basic-git> git status
+On branch ft/bundle-2
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   services.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Malaika\basic-git> git add services.html
+PS C:\Users\Malaika\basic-git> git commit -m "service page is ready now"
+[ft/bundle-2 cc307e7] service page is ready now
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\Malaika\basic-git> git push origin ft/bundle-2
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 341 bytes | 341.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/GODisALL-FriendOfJesus/basic-git.git
+   02cfc51..cc307e7  ft/bundle-2 -> ft/bundle-2
+PS C:\Users\Malaika\basic-git>
+
+
 ```
