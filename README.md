@@ -192,6 +192,400 @@ To https://github.com/GODisALL-FriendOfJesus/basic-git.git
    02cfc51..cc307e7  ft/bundle-2 -> ft/bundle-2
 PS C:\Users\Malaika\basic-git>
 
+PS C:\Users\Malaika\basic-git> git checkout -b ft/service-redesign
+Switched to a new branch 'ft/service-redesign'
+PS C:\Users\Malaika\basic-git> git add service.html
+fatal: pathspec 'service.html' did not match any files
+PS C:\Users\Malaika\basic-git> git add services.html
+PS C:\Users\Malaika\basic-git> git commit -m "exercise2Bandle2 G
+[ft/service-redesign a7fb1e6] exercise2Bandle2 GODisALL  service updates
+ 1 file changed, 1 insertion(+)
+PS C:\Users\Malaika\basic-git> git push
+fatal: The current branch ft/service-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/service-redesign
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\Malaika\basic-git> git push --set-upstream origin ft/service-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 371 bytes | 371.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)ects.
+remote: 
+remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
+remote:      https://github.com/GODisALL-FriendOfJesus/basic-git/pull/new/ft/service-redesign
+To https://github.com/GODisALL-FriendOfJesus/basic-git.git
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
+M       README.md
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config set advice.addEmptyPathspec false"
+PS C:\Users\Malaika\basic-git> git add services.html            
+PS C:\Users\Malaika\basic-git> git commit -m "exercise2Bandle2 GODisALL  service updates in main"
+[main ff0a056] exercise2Bandle2 GODisALL  service updates in main
+ 1 file changed, 2 insertions(+)
+PS C:\Users\Malaika\basic-git> git push --set-upstream origin ft/service-redesign                
+branch 'ft/service-redesign' set up to track 'origin/ft/service-
+Everything up-to-date
+PS C:\Users\Malaika\basic-git> git push
+To https://github.com/GODisALL-FriendOfJesus/basic-git.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/GODisALL-FriendOfJesus/basic-git.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+        modified:   services.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Malaika\basic-git> git add services.html            
+PS C:\Users\Malaika\basic-git> git commit -m "exercise2Bandle2 GODisALL  service updates in main"
+[main e72fd32] exercise2Bandle2 GODisALL  service updates in mai
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+PS C:\Users\Malaika\basic-git> git push
+To https://github.com/GODisALL-FriendOfJesus/basic-git.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/GODisALL-FriendOfJesus/basic-git.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes,
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' fo
+PS C:\Users\Malaika\basic-git> git pull
+remote: Enumerating objects: 1, done.om 0)
+Unpacking objects: 100% (1/1), 932 bytes | 23.00 KiB/s, done.
+From https://github.com/GODisALL-FriendOfJesus/basic-git
+   34e6838..6c9c9aa  main       -> origin/main
+Auto-merging services.html
+CONFLICT (content): Merge conflict in services.html
+Automatic merge failed; fix conflicts and then commit the result.
+PS C:\Users\Malaika\basic-git> git push
+Everything up-to-date
+PS C:\Users\Malaika\basic-git> git checkout  ft/service-redesign                                 
+Switched to branch 'ft/service-redesign'
+Your branch is up to date with 'origin/ft/service-redesign'.
+PS C:\Users\Malaika\basic-git> git diff main ft/service-redesign
+diff --git a/README.md b/README.md
+index 9f924e8..446b21c 100644
+--- a/README.md
++++ b/README.md
+@@ -193,35 +193,4 @@ To https://github.com/GODisALL-FriendOfJesus/basic-git.git
+ PS C:\Users\Malaika\basic-git>
+ 
+ 
+-```
+-BANDLE 2 - Exercise 2
+-```bash 
+-## 1)
+-PS C:\Users\Malaika\basic-git> git checkout main
+-Switched to branch 'main'
+-Your branch is up to date with 'origin/main'.
+:
+diff --git a/README.md b/README.md
+index 9f924e8..446b21c 100644
+--- a/README.md
++++ b/README.md
+@@ -193,35 +193,4 @@ To https://github.com/GODisALL-FriendOfJesus/basic-git.git
+ PS C:\Users\Malaika\basic-git>
+ 
+ 
+-```
+-BANDLE 2 - Exercise 2
+-```bash 
+-## 1)
+-PS C:\Users\Malaika\basic-git> git checkout main
+-Switched to branch 'main'
+-Your branch is up to date with 'origin/main'.
+-
+:...skipping...
+diff --git a/README.md b/README.md
+index 9f924e8..446b21c 100644
+--- a/README.md
++++ b/README.md
+@@ -193,35 +193,4 @@ To https://github.com/GODisALL-FriendOfJesus/basic-git.git
+ PS C:\Users\Malaika\basic-git>
+ 
+ 
+-```
+-BANDLE 2 - Exercise 2
+-```bash 
+-## 1)
+-PS C:\Users\Malaika\basic-git> git checkout main
+-Switched to branch 'main'
+-Your branch is up to date with 'origin/main'.
+-
+-
+-PS C:\Users\Malaika\basic-git> git pull
+-remote: Enumerating objects: 2, done.
+-remote: Counting objects: 100% (2/2), done.
+-remote: Compressing objects: 100% (2/2), done.
+-remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+:...skipping...
+diff --git a/README.md b/README.md
+index 9f924e8..446b21c 100644
+--- a/README.md
++++ b/README.md
+@@ -193,35 +193,4 @@ To https://github.com/GODisALL-FriendOfJesus/basic-git.git
+ PS C:\Users\Malaika\basic-git>
+ 
+ 
+-```
+-BANDLE 2 - Exercise 2
+-```bash 
+-## 1)
+-PS C:\Users\Malaika\basic-git> git checkout main
+-Switched to branch 'main'
+-Your branch is up to date with 'origin/main'.
+-
+-
+-PS C:\Users\Malaika\basic-git> git pull
+-remote: Enumerating objects: 2, done.
+-remote: Counting objects: 100% (2/2), done.
+-remote: Compressing objects: 100% (2/2), done.
+-remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+-Unpacking objects: 100% (2/2), 1.78 KiB | 8.00 KiB/s, done.
+-From https://github.com/GODisALL-FriendOfJesus/basic-git
+-   7265f48..34e6838  main       -> origin/main
+-Updating 7265f48..34e6838
+-Fast-forward
+- About.html    |  11 ++++
+- Home.html     |  11 ++++
+- README.md     | 189 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+- services.html |  12 ++++
+:
+diff --git a/README.md b/README.md
+index 9f924e8..446b21c 100644
+--- a/README.md
++++ b/README.md
+@@ -193,35 +193,4 @@ To https://github.com/GODisALL-FriendOfJesus/basic-git.git
+ PS C:\Users\Malaika\basic-git>
+ 
+ 
+-```
+-BANDLE 2 - Exercise 2
+-```bash 
+-## 1)
+-PS C:\Users\Malaika\basic-git> git checkout main
+-Switched to branch 'main'
+-Your branch is up to date with 'origin/main'.
+-
+-
+-PS C:\Users\Malaika\basic-git> git pull
+-remote: Enumerating objects: 2, done.
+-remote: Counting objects: 100% (2/2), done.
+-remote: Compressing objects: 100% (2/2), done.
+-remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+-Unpacking objects: 100% (2/2), 1.78 KiB | 8.00 KiB/s, done.
+-From https://github.com/GODisALL-FriendOfJesus/basic-git
+-   7265f48..34e6838  main       -> origin/main
+-Updating 7265f48..34e6838
+-Fast-forward
+- About.html    |  11 ++++
+- Home.html     |  11 ++++
+- README.md     | 189 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+:
+diff --git a/README.md b/README.md
+index 9f924e8..446b21c 100644
+--- a/README.md
++++ b/README.md
+@@ -193,35 +193,4 @@ To https://github.com/GODisALL-FriendOfJesus/basic-git.git
+ PS C:\Users\Malaika\basic-git>
+ 
+ 
+-```
+-BANDLE 2 - Exercise 2
+-```bash 
+-## 1)
+-PS C:\Users\Malaika\basic-git> git checkout main
+-Switched to branch 'main'
+-Your branch is up to date with 'origin/main'.
+-
+-
+-PS C:\Users\Malaika\basic-git> git pull
+-remote: Enumerating objects: 2, done.
+-remote: Counting objects: 100% (2/2), done.
+-remote: Compressing objects: 100% (2/2), done.
+-remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+-Unpacking objects: 100% (2/2), 1.78 KiB | 8.00 KiB/s, done.
+-From https://github.com/GODisALL-FriendOfJesus/basic-git
+-   7265f48..34e6838  main       -> origin/main
+-Updating 7265f48..34e6838
+-Fast-forward
+- About.html    |  11 ++++
+- Home.html     |  11 ++++
+:
+diff --git a/README.md b/README.md
+index 9f924e8..446b21c 100644
+--- a/README.md
++++ b/README.md
+@@ -193,35 +193,4 @@ To https://github.com/GODisALL-FriendOfJesus/basic-git.git
+ PS C:\Users\Malaika\basic-git>
+ 
+ 
+-```
+-BANDLE 2 - Exercise 2
+-```bash 
+-## 1)
+-PS C:\Users\Malaika\basic-git> git checkout main
+-Switched to branch 'main'
+-Your branch is up to date with 'origin/main'.
+-
+-
+-PS C:\Users\Malaika\basic-git> git pull
+-remote: Enumerating objects: 2, done.
+-remote: Counting objects: 100% (2/2), done.
+-remote: Compressing objects: 100% (2/2), done.
+-remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+-Unpacking objects: 100% (2/2), 1.78 KiB | 8.00 KiB/s, done.
+-From https://github.com/GODisALL-FriendOfJesus/basic-git
+-   7265f48..34e6838  main       -> origin/main
+-Updating 7265f48..34e6838
+-Fast-forward
+- About.html    |  11 ++++
+:
+diff --git a/README.md b/README.md
+index 9f924e8..446b21c 100644
+--- a/README.md
++++ b/README.md
+@@ -193,35 +193,4 @@ To https://github.com/GODisALL-FriendOfJesus/basic-git.git
+ PS C:\Users\Malaika\basic-git>
+ 
+ 
+-```
+-BANDLE 2 - Exercise 2
+-```bash 
+-## 1)
+-PS C:\Users\Malaika\basic-git> git checkout main
+-Switched to branch 'main'
+-Your branch is up to date with 'origin/main'.
+-
+-
+-PS C:\Users\Malaika\basic-git> git pull
+-remote: Enumerating objects: 2, done.
+-remote: Counting objects: 100% (2/2), done.
+-remote: Compressing objects: 100% (2/2), done.
+-remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+-Unpacking objects: 100% (2/2), 1.78 KiB | 8.00 KiB/s, done.
+-From https://github.com/GODisALL-FriendOfJesus/basic-git
+-   7265f48..34e6838  main       -> origin/main
+-Updating 7265f48..34e6838
+-Fast-forward
+:
+diff --git a/README.md b/README.md
+index 9f924e8..446b21c 100644
+--- a/README.md
++++ b/README.md
+@@ -193,35 +193,4 @@ To https://github.com/GODisALL-FriendOfJesus/basic-git.git
+ PS C:\Users\Malaika\basic-git>
+ 
+ 
+-```
+-BANDLE 2 - Exercise 2
+-```bash 
+-## 1)
+-PS C:\Users\Malaika\basic-git> git checkout main
+-Switched to branch 'main'
+-Your branch is up to date with 'origin/main'.
+-
+-
+-PS C:\Users\Malaika\basic-git> git pull
+-remote: Enumerating objects: 2, done.
+:
+diff --git a/README.md b/README.md
+index 9f924e8..446b21c 100644
+--- a/README.md
++++ b/README.md
+@@ -193,35 +193,4 @@ To https://github.com/GODisALL-FriendOfJesus/basic-git.git
+ PS C:\Users\Malaika\basic-git>
+ 
+ 
+-```
+-BANDLE 2 - Exercise 2
+:
+diff --git a/README.md b/README.md
+index 9f924e8..446b21c 100644
+--- a/README.md
++++ b/README.md
+@@ -193,35 +193,4 @@ To https://github.com/GODisALL-FriendOfJesus/basic-git.git
+ PS C:\Users\Malaika\basic-git>
+ 
+ 
+:
+diff --git a/README.md b/README.md
+:
+diff --git a/README.md b/README.md
+index 9f924e8..446b21c 100644
+--- a/README.md
++++ b/README.md
+@@ -193,35 +193,4 @@ To https://github.com/GODisALL-FriendOfJesus/basic-git.git
+ PS C:\Users\Malaika\basic-git>
+ 
+ 
+:
+diff --git a/README.md b/README.md
+index 9f924e8..446b21c 100644
+--- a/README.md
++++ b/README.md
+@@ -193,35 +193,4 @@ To https://github.com/GODisALL-FriendOfJesus/basic-git.git
+ PS C:\Users\Malaika\basic-git>
+ 
+ 
+-```
+-BANDLE 2 - Exercise 2
+-```bash 
+-## 1)
+-PS C:\Users\Malaika\basic-git> git checkout main
+-Switched to branch 'main'
+-Your branch is up to date with 'origin/main'.
+-
+-
+:
+diff --git a/README.md b/README.md
+index 9f924e8..446b21c 100644
+--- a/README.md
++++ b/README.md
+@@ -193,35 +193,4 @@ To https://github.com/GODisALL-FriendOfJesus/basic-git.git
+ PS C:\Users\Malaika\basic-git>
+ 
+ 
+-```
+-BANDLE 2 - Exercise 2
+-```bash 
+-## 1)
+-PS C:\Users\Malaika\basic-git> git checkout main
+-Switched to branch 'main'
+-Your branch is up to date with 'origin/main'.
+-
+-
+-PS C:\Users\Malaika\basic-git> git pull
+-remote: Enumerating objects: 2, done.
+-remote: Counting objects: 100% (2/2), done.
+-remote: Compressing objects: 100% (2/2), done.
+-remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+-Unpacking objects: 100% (2/2), 1.78 KiB | 8.00 KiB/s, done.
+:
+
+PS C:\Users\Malaika\basic-git> git merge  ft/service-redesign
+Already up to date.
+
+
+
+
 
 ```
 BANDLE 2 - Exercise 2
