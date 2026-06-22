@@ -194,3 +194,34 @@ PS C:\Users\Malaika\basic-git>
 
 
 ```
+BANDLE 2 - Exercise 2
+```bash 
+## 1)
+PS C:\Users\Malaika\basic-git> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+
+PS C:\Users\Malaika\basic-git> git pull
+remote: Enumerating objects: 2, done.
+remote: Counting objects: 100% (2/2), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (2/2), 1.78 KiB | 8.00 KiB/s, done.
+From https://github.com/GODisALL-FriendOfJesus/basic-git
+   7265f48..34e6838  main       -> origin/main
+Updating 7265f48..34e6838
+Fast-forward
+ About.html    |  11 ++++
+ Home.html     |  11 ++++
+ README.md     | 189 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ services.html |  12 ++++
+ 4 files changed, 223 insertions(+)
+ create mode 100644 About.html
+ create mode 100644 Home.html
+ create mode 100644 services.html
+
+
+ ## 2)
+
+```
