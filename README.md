@@ -1,4 +1,4 @@
-## Bandle1-exercises1
+## BUNDLE1-exercises1
 ```bash
 PS C:\Users\Malaika\basic-git> git init
 Initialized empty Git repository in C:/Users/Malaika/basic-git/.git/
@@ -146,7 +146,7 @@ PS C:\Users\Malaika\basic-git>
 
 
 ```
-## BANDLE 2
+## BUNDLE 2
 ```bash 
 ##exercise1
 
@@ -289,7 +289,7 @@ index 9f924e8..446b21c 100644
  
  
 -```
--BANDLE 2 - Exercise 2
+### BUNDLE 2 - Exercise 2
 -```bash 
 -## 1)
 -PS C:\Users\Malaika\basic-git> git checkout main
